@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style> 
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Rock Paper Scissors</h1>
+    </header>
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="scoreboard-info">Make your selection</h2>
+            <h2 class="score-info">First to 10 wins</h2>
+            <div class="score">
+                <h3 class="scores">Your score: <span id="playerScore"></span></h3>
+                <h3 class="scores">CPU score: <span id="cpuScore"></span></h3>
+            </div>
+            <span id="result"></span>
+        </div>
+        <div class="buttons">
+            <button class="choicesButtons" id="Rock" value="Rock">Rock</button>
+            <button class="choicesButtons" id="Paper" value="Paper">Paper</button>
+            <button  class="choicesButtons" id="Scissors" value="Scissors">Scissors</button>
+        </div>
+        <span id="game-end-text"></span>
+        <button id="play-again">Play again?</button>
+    </main>
+    <footer class="footer">
+        ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        Matthew Towers
+        <a href="https://github.com/matthew4322">
+            <i class="fa fa-github"></i>
+        </a>
+    </footer>
+
+    <script src="RockPaperScissors.js"></script>
+</body>
+</html>
